@@ -6,7 +6,7 @@ interface FetchResponse<T> {
   count: number;
   results: T[];
 }
-const useGenres = <T>(endpoint: string) => {
+const useData = <T>(endpoint: string) => {
   const [data, setData] = useState<T[]>([]);
   const [error, setError] = useState("");
   const [isLoading, setLoading] = useState(false);
@@ -33,4 +33,4 @@ const useGenres = <T>(endpoint: string) => {
 
   return { data, error, isLoading };
 };
-export default useGenres;
+export default useData;
