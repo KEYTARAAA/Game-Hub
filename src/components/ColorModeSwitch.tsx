@@ -9,8 +9,8 @@ function ColorModeSwitch() {
         onChange={toggleColorMode}
         colorScheme="green"
       />
-      <Text>
-        <strong>{colorMode === "dark" ? "Dark" : "Light"}</strong>
+      <Text whiteSpace="nowrap">
+        <strong>{colorMode === "dark" ? "Dark" : "Light"} Mode</strong>
       </Text>
     </HStack>
   );
