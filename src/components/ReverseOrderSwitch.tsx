@@ -1,5 +1,4 @@
 import { HStack, Switch, Text } from "@chakra-ui/react";
-import { useState } from "react";
 interface Props {
   reverse: boolean;
   onToggle: (reverse: boolean) => void;
